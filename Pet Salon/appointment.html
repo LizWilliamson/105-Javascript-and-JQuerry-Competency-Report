@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href="https://fonts.googleapis.com/css?family=Cinzel&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Lato&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <title>Game of Bones Pet Salon</title>
+</head>
+<body>
+    <header class="site-in">
+        <h1>Game of Bones</h1>
+        <div class="menu">
+            <nav>
+                <a href="index.html">Home</a>
+                <a href="#">About</a>
+                <a href="appointment.html">Make An Appointment</a>
+        
+            </nav>
+        </div>
+    </header>
+
+    <main class="main-in">
+        <div class="img-location">
+            <img class="img-logo-appointment" src="img/cute-pugs-game-of-thrones-pugs-of-westeros-fb__700.jpg" alt="Pugs">
+        
+        </div>
+        
+        <section class="appointment">
+            <h2>Make An Appointment</h2>
+            <div class="appointment-form">
+                <form action="">
+                    <p>I am the Mother of: <select name="breed" id="breed">
+                        <option value=""disabled selected>---- Select One ----</option>
+                        <option value="Dragon">Dragon</option>
+                        <option value="Unicorn">Unicorn</option>
+                        <option value="Dog">Dog</option>
+                        <option value="ShadowCat">ShadowCat</option>
+                        <option value="Manticore">Manticore</option>
+                        <option value="Giant Ice Spider">Giant Ice Spider</option>
+                        <option value="Kraken">Kraken</option>
+                        <option value="old-men">Old Men of the River</option>
+                        <option value="Sea Dragon">Sea Dragon</option>
+                        <option value="Ice Dragon">Ice Dragon</option>
+                    </select></p>
+                    <p>House of: <input type="text" name="owner" id="owner" placeholder="Owner's Name"></p>
+                    <p>Contact: <input type="text" name="contact" id="contactPhone"></p>
+                    <p>Name: <input type="text" name="name" id="petName" placeholder="Pet Name"></p>
+                    <p>Age: <input type="text" name="age" id="age" placeholder="Pet Age"></p>
+                    
+                    <p>Gender: <input type="text" name="gender" id="gender"></p>
+                    
+                    <p>Service: <select name="service" id="service">
+                        <option value=""disabled selected>---- Select a Service ----</option>
+                        <option value="Teeth Sharpening">Teeth Sharpening</option>
+                        <option value="Horn Shining">Horn Shining</option>
+                        <option value="Fire Refueling">Fire Refueling</option>
+                        <option value="Wing Massage">Wing Massage</option>
+                        <option value="Mani-Pedi">Manicure/Pedicure</option>
+                        <option value="Full Service">Full Service Grooming</option>
+
+                    </select></p>
+                    
+                    
+            
+                </form>
+                <input class="btn" id="btn" type="submit" value="Make Appointment" onclick="appointment();">
+            
+            </div>
+            
+        
+        </section>
+
+        
+        
+
+        
+    </main>
+
+    
+
+    <div class="info"></div>
+
+    <section class="list-pets">
+            <h2>Appointments by Bran</h2>
+            <div>
+                <input type="text" id="search">
+                <button class="btn" onclick="search();">Search </button>
+            </div>
+            <div>
+                <table class="" id=petTable>
+                    <thead>
+                        <th>Breed</th>
+                        <th>Owner Name</th>
+                        <th>Contact Info</th>
+                        <th>Pet Name</th>
+                        <th>Age</th>
+                        <th>Gender</th>
+                        <th>Service</th>
+                        <th>Delete?</th>
+                    </thead>
+                    <tbody id="listBody">
+                        
+
+                    </tbody>
+
+
+                </table>
+                
+                
+                
+                
+            </div>
+        </section>
+
+    <footer class="footer-in">
+        <div class="menu-footer">
+            <nav>
+                <a href="index.html">Home</a>
+                <a href="#">About</a>
+                <a href="appointment.html">Make An Appointment</a>
+                
+            </nav>
+
+        </div>
+        <div class="info">
+
+
+            </div>
+    </footer>
+   
+    <script src="jquery-3.4.1.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
